@@ -1,0 +1,81 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+<script src="soundfont-player.min.js"></script>
+<script src="./sample-player.min.js"></script>
+<script src="./script2.js" ></script>
+<style>
+#chords , #progressions{
+ display: inline-flex;
+ _border-radius: 25px;
+ 1padding: 20px;
+ 1width: 50px;
+ 1height:50px;
+
+}
+
+.progression {
+  _border-style: inset;
+  display: inline-flex;
+  border-width: 3px;
+  xpadding: 5px;
+  margin: 5px;
+}
+.ch_num1 {
+  border-top: #ff0000 solid ;
+  border-bottom: #ff0000 solid ;
+}
+.ch_num2 {
+  border-top: #ff9900 solid ;
+  border-bottom: #ff9900 solid ;
+}
+.ch_num3 {
+  border-top: #ffff00 solid ;
+  border-bottom: #ffff00 solid ;
+}
+.ch_num4 {
+  border-top: #00ff00 solid ;
+  border-bottom: #00ff00 solid;
+}
+.ch_num5 {
+  border-top: #0000ff solid ;
+  border-bottom: #0000ff solid ;
+}
+.ch_num6 {
+  border-top: #9900ff solid ;
+  border-bottom: #9900ff solid ;
+}
+.ch_num7 {
+  border-bottom: #ff00ff solid ;
+  border-top: #ff00ff solid ;
+}
+
+#chords.div {
+  
+}
+.chord {
+  _border-top: inset;
+  border-width: 5px;
+  _border-radius: 5px;
+  _inline-size: 60px;
+  text-align: center;
+  width:60px;
+  height: 30px;
+  _margin: 5px;
+}
+</style>
+</head>
+
+<div id="target">
+  Click here
+</div>
+<div id="other">
+  Trigger the handler
+</div>
+<button class="play">Play</button>
+<button class="play1">Play1</button>
+<select name="scale" id="scale"></select>
+<select name="tone" id="tone"></select>
+ 
+  <div id="chords" class="chords"></div>
+  <div id="progressions"></div>

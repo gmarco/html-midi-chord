@@ -5,15 +5,19 @@
 <script src="./sample-player.min.js"></script>
 <script src="./script2.js" ></script>
 <style>
-#chords , #progressions{
+#progressions{
  display: inline-flex;
  _border-radius: 25px;
  1padding: 20px;
  1width: 50px;
  1height:50px;
-
+  width: 100vw;
+  overflow-x: scroll;
 }
 
+#chords {
+ display: inline-flex;
+}
 .progression {
   _border-style: inset;
   display: inline-flex;
@@ -66,16 +70,13 @@
 </style>
 </head>
 
-<div id="target">
-  Click here
-</div>
-<div id="other">
-  Trigger the handler
-</div>
-<button class="play">Play</button>
-<button class="play1">Play1</button>
+<!--<button class="play">Play</button>
+<button class="play1">Play1</button>-->
 <select name="scale" id="scale"></select>
 <select name="tone" id="tone"></select>
+<select id="input_device"></select>
+<select id="output_device"></select>
+<select id="instrument"></select>
  
   <div id="chords" class="chords"></div>
   <div id="progressions"></div>

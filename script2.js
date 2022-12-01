@@ -142,7 +142,8 @@ instruments=[
 "xylophone",
 ]
  chords={
-    "none":[0],
+  
+  /*  "none":[0],
     "d": [0,4,7],
     "7": [0,4,7,10],
     "9": [0,4,7,10,14],
@@ -158,6 +159,100 @@ instruments=[
     "sus": [0,5,7,10],
     "dim": [0,3,6,9],
     "aug": [0,4,8,10],
+*/
+    "none":[0],
+    "5": [0,7],
+    "no5": [0,4],
+    "omit5": [0,4],
+    "m[no5]": [0,3],
+    "m[omit5]": [0,3],
+
+    "maj": [0,4,7],
+    "m": [0,3,7],
+    "min": [0,3,7],
+    "-": [0,3,7],
+    "dim": [0,3,6],
+    "[b5]": [0,4,6],
+    "aug": [0,4,8],
+    "sus2": [0,2,7],
+    "sus4": [0,5,7],
+    "sus": [0,5,7],
+    "6": [0,4,7,9],
+    "7": [0,4,7,10],
+    "7-5": [0,4,6,10],
+    "7b5": [0,4,6,10],
+    "7+5": [0,4,8,10],
+    "7#5": [0,4,8,10],
+    "7sus4": [0,5,7,10],
+    "m6": [0,3,7,9],
+    "m7": [0,3,7,10],
+    "m7-5": [0,3,6,10],
+    "m7b5": [0,3,6,10],
+    "m7+5": [0,3,8,10],
+    "m7#5": [0,3,8,10],
+    "dim6": [0,3,6,8],
+    "dim7": [0,3,6,9],
+    "M7": [0,4,7,11],
+    "maj7": [0,4,7,11],
+    "M7+5": [0,4,8,11],
+    "mM7": [0,3,7,11],
+    "add4": [0,4,5,7],
+    "Madd4": [0,4,5,7],
+    "madd4": [0,3,5,7],
+    "add9": [0,4,7,14],
+    "Madd9": [0,4,7,14],
+    "madd9": [0,3,7,14],
+    "sus4add9": [0,5,7,14],
+    "sus4add2": [0,2,5,7],
+    "2": [0,4,7,14],
+    "add11": [0,4,7,17],
+    "4": [0,4,7,17],
+    "m69": [0,3,7,9,14],
+    "69": [0,4,7,9,14],
+    "9": [0,4,7,10,14],
+    "m9": [0,3,7,10,14],
+    "M9": [0,4,7,11,14],
+    "maj9": [0,4,7,11,14],
+    "9sus4": [0,5,7,10,14],
+    "7-9": [0,4,7,10,13],
+    "7b9": [0,4,7,10,13],
+    "7+9": [0,4,7,10,15],
+    "7#9": [0,4,7,10,15],
+    "9-5": [0,4,6,10,14],
+    "9b5": [0,4,6,10,14],
+    "9+5": [0,4,8,10,14],
+    "9#5": [0,4,8,10,14],
+    "7#9b5": [0,4,6,10,15],
+    "7#9#5": [0,4,8,10,15],
+    "m7b9b5": [0,3,6,10,13],
+    "7b9b5": [0,4,6,10,13],
+    "7b9#5": [0,4,8,10,13],
+    "11": [0,7,10,14,17],
+    "7+11": [0,4,7,10,18],
+    "7#11": [0,4,7,10,18],
+    "M7+11": [0,4,7,11,18],
+    "M7#11": [0,4,7,11,18],
+    "7b9#9": [0,4,7,10,13,15],
+    "7b9#11": [0,4,7,10,13,18],
+    "7#9#11": [0,4,7,10,15,18],
+    "7-13": [0,4,7,10,20],
+    "7b13": [0,4,7,10,20],
+    "m7add11": [0,3,7,10,17],
+    "M7add11": [0,4,7,11,17],
+    "mM7add11": [0,3,7,11,17],
+    "7b9b13": [0,4,7,10,13,17,20],
+    "9+11": [0,4,7,10,14,18],
+    "9#11": [0,4,7,10,14,18],
+    "13": [0,4,7,10,14,21],
+    "13-9": [0,4,7,10,13,21],
+    "13b9": [0,4,7,10,13,21],
+    "13+9": [0,4,7,10,15,21],
+    "13#9": [0,4,7,10,15,21],
+    "13+11": [0,4,7,10,18,21],
+    "13#11": [0,4,7,10,18,21],
+    "M7add13": [0,4,7,9,11,14],
+    
+    //sus2,sus#4,maj6/9, maj7sus#4,maj#11,maj13
 }
 chord_progressions=[
     [1,5,6,4],
@@ -175,13 +270,31 @@ chord_progressions=[
 ]
 
 key_diff={
-    "dur"  : [2,2,1,2,2,2,1],
-    "moll" : [2,1,2,2,1,2,2],
+    //"dur"  : [2,2,1,2,2,2,1],
+    //"moll" : [2,1,2,2,1,2,2],
+
+    "maj" :[2,2,1,2,2,2,1],
+    "Dor" :[2,1,2,2,2,1,2],
+    "Phr" :[1,2,2,2,1,2,2],
+    "Lyd" :[2,2,2,1,2,2,1],
+    "Mix" :[2,2,1,2,2,1,2],
+    "min" :[2,1,2,2,1,2,2],
+    "Loc" :[1,2,2,1,2,2,2]
+
+    /*
+    'maj': [0, 2, 4, 5, 7, 9, 11, 12],
+    'Dor': [0, 2, 3, 5, 7, 9, 10, 12],
+    'Phr': [0, 1, 3, 5, 7, 8, 10, 12],
+    'Lyd': [0, 2, 4, 6, 7, 9, 11, 12],
+    'Mix': [0, 2, 4, 5, 7, 9, 10, 12],
+    'min': [0, 2, 3, 5, 7, 8, 10, 12],
+    'Loc': [0, 1, 3, 5, 6, 8, 10, 12],
+    */
 }
 
 progressions={
-    "dur":["d","m","m","d","d","m","dim"],
-    "moll":["m","dim","d","m","m","d","d"],
+    "maj":["maj","min","min","maj","maj","min","dim"],
+    "min":["min","dim","maj","min","min","maj","maj"],
 }
 scales={
     "C":0,
@@ -199,11 +312,33 @@ scales={
     
 }
 
+TWINKLE_TWINKLE = {
+    notes: [
+      {pitch: 60, startTime: 0.0, endTime: 0.5},
+      {pitch: 60, startTime: 0.5, endTime: 1.0},
+      {pitch: 67, startTime: 1.0, endTime: 1.5},
+      {pitch: 67, startTime: 1.5, endTime: 2.0},
+      {pitch: 69, startTime: 2.0, endTime: 2.5},
+      {pitch: 69, startTime: 2.5, endTime: 3.0},
+      {pitch: 67, startTime: 3.0, endTime: 4.0},
+      {pitch: 65, startTime: 4.0, endTime: 4.5},
+      {pitch: 65, startTime: 4.5, endTime: 5.0},
+      {pitch: 64, startTime: 5.0, endTime: 5.5},
+      {pitch: 64, startTime: 5.5, endTime: 6.0},
+      {pitch: 62, startTime: 6.0, endTime: 6.5},
+      {pitch: 62, startTime: 6.5, endTime: 7.0},
+      {pitch: 60, startTime: 7.0, endTime: 8.0},  
+    ],
+    totalTime: 8
+  };
+
+
+
 function note_from_keydiff(diff){
     //find  out key in scale with diff of notes in c scale
-    ret=0
+    ret=-1
     s=0
-    key_diff["dur"].forEach((d,i)=>{
+    key_diff["maj"].forEach((d,i)=>{
         
         if (s==diff){
             ret=i
@@ -216,7 +351,7 @@ function note_from_keydiff(diff){
 }
 
 function key_diff_from_note(tone,note){
-    ret=0
+    ret=-1
     s=0
     key_diff[tone].forEach((d,i)=>{
         
@@ -232,7 +367,7 @@ function key_diff_from_note(tone,note){
 
 $(document).ready(function() {    
     $.each(scales, function (name, value) {
-        console.log("adding");
+        //console.log("adding");
         //console.log(i);
         $('#scale').append($('<option>', { 
             value: value,
@@ -241,7 +376,7 @@ $(document).ready(function() {
     });
     
     $.each(progressions, function (name, value) {
-        console.log("adding");
+        //console.log("adding");
         //console.log(i);
         $('#tone').append($('<option>', { 
             value: name,
@@ -254,6 +389,28 @@ $(document).ready(function() {
             text : name 
         }));
     })
+    modes={
+        "plain_note":"Plain Note",
+        "named_chord":"Named Chord from this Note",
+        "single_scale":"Single Note from selected Scale",
+        "named_chord_scale":"Named Chord from selected Scale",
+        "scale_chord":"I-VII Chord from scale"
+    }
+
+    $.each(modes,function(key,value){
+        $("#inputmode").append($("<option>",{
+            value: key,
+            text: value
+        }))
+    })
+
+    $.each(chords,function(key ,values){
+        $("#singlechord").append($("<option>",{
+            value: key,
+            text: key
+        }))
+    })
+    
 
     $("#instrument").change(function(e){
         console.log(e);
@@ -272,7 +429,6 @@ $(document).ready(function() {
     })
     fill_chords();
 
-
 });  
 
 function num_to_roman(num){
@@ -286,17 +442,20 @@ function create_chord_item(chord_num,chord_name,base,base_diff){
     
     //console.log(chords[name_chord]);
     num_ch=num_to_roman(chord_num);
-    if (chord_name=="d"){
+    if (chord_name=="maj"){
         num_ch=num_ch.toUpperCase();
     }
-
+    extra=""
+    if (chord_name!="maj" && chord_name!="min"){
+        extra="<sup>"+chord_name+"</sup>"
+    }
     var it=$("<div></div>")
     .addClass("chord")
     .addClass("ch_num"+(chord_num+1))
     .attr("chord_name",chord_name)
     .attr("base_diff",base_diff)
     .attr("base",base)
-    .text(num_ch)
+    .html(num_ch+ extra)
     
     return it;
 }
@@ -378,23 +537,7 @@ function fill_progressions(){
     })
 }
       
-// click event
-/*
-document.addEventListener('click', function (e) {
-    if (e.target.closest('.play')) {
-       ctx.resume().then(() => {
-            //source.start(0);
-       });
-    }
-    if (e.target.closest('.play1')) {
-        ctx.resume().then(() => {
-            kkk();
-             //source.start(0);
-        });
-     }
-})
 
-*/
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -413,20 +556,12 @@ function play_progression(e){
         p1.push({chord: io.attr("chord_name"),base: io.attr("base"), diff: io.attr("base_diff")})
     });
     play_chord2(p1);
-   /* console.log(p1)
 
-    scale_diff=parseInt($("#scale").val());
-    diff=parseInt($(e.target).attr("diff"))
-    prog=[]
-    $.each(_progressions.split(","),function(i,e){
-        //console.log(actual_chords[e])
-        prog.push({chord: actual_chords[e-1].chord.join(","), base: 60+scale_diff+actual_chords[e-1].diff})
-    })*/
-   //play_chord(prog)
 }
 
 
-function play_chord2(chord){
+function play_chord2(chord,options){
+
     //array of {chord: 'm',base: 60,diff:5}
     //console.log(chord)
     instrument.then(function(a){
@@ -437,52 +572,51 @@ function play_chord2(chord){
             
             base=parseInt(chor.base)
             diff=parseInt(chor.diff)
-            chord_name=chor.chord
+            chord_name=chor.chord 
             out.push("chord_name="+diff)
             
             $.each(chords[chord_name],function (i,o){
-                n=new Note(base+diff+o)
+                n=new Note(base+diff+o,options)
                 out.push(n.identifier)
+                //extern midi only selected sound
                 if(midiOut!=null){
                     midiOut.playNote(n,{duration: 500,time: WebMidi.time+(ind*1000)})
                 }
+                //local sound with ocatves
+                gain = options !=undefined ? options._attack : 1.0
+                t=ind*1
+                pattern=0
+                switch (pattern){
+                    case 0:
+                        t=ind*1
+                        break;
+                    case 1:
+                        t=ind*2+i*0.5
+                        break;
+                    case 2:
+                        t=ind*1.3+i%2*0.6
+                        break;
+                    case 3:
+                        t=ind*1.3+ ( (i==0)?0.5 : i==1? 0.0 : i==2 ? 1.0 :1.3 )
+                        break;
+                    case 4:
+                        t=ind*0.8+ ( (i==0)?0.2 : i==1? 0.4 : i==2 ? 0.6 : 0.8)
+                        break;
+                }
                 a.schedule(ctx.currentTime, [
-                    {note:n.number,time:ind*1},
-                    {note:n.number+12,time:ind*1},
-                    {note:n.number-12,time:ind*1}
+                    {note:n.number,time:t ,gain: gain},
+                   /* {note:n.number+12,time:t ,gain:gain},
+                    {note:n.number-12,time:t ,gain:gain}*/
                     
                 ])
             })
             
         })
-        console.log(out.join(" "))
+        //console.log(out.join(" "))
     })
 }
 
-/*
-function play_chord(chord){
-    instrument.then(function(a){
-        $.each(chord,function(ind,chor){
-            base_note=chor.base;
-            console.log(chor);
-            $.each(chor.chord.split(","),function(i,e){
-                //console.log(i);
-                //console.log(e);
-                d_tone=parseInt(e)
-                //a.play(base_note+d_tone);
-                
-                a.schedule(ctx.currentTime, [
-                    {note: base_note+d_tone,time:ind*1}
-                    /*{ note: 'c2', time: 0, gain: 0.9 },
-                    { note: 'e2', time: 0., gain: 0.7 },
-                    { note: 'g2', time: 0.5, gain: 0.5 },
-                    { note: 'c3', time: 0.75, gain: 0.3 }
-                ])
-            });
-        })
-        
-    });
-}*/
+
 
 function play_chord_clicked(e){
 
@@ -491,11 +625,14 @@ function play_chord_clicked(e){
     play_chord2([{chord: i.attr("chord_name"),base: i.attr("base"), diff: i.attr("base_diff")}])
     
 }
-
-
-function play_chord_shifted_from_c(event){
+function process_input(event){
+    
     var value = parseInt(document.getElementById("scale").value); // note shift from select
-    note_played=event.note.number //note played
+    note=event.note.number
+    original_note=event.note
+    on_json=JSON.parse(JSON.stringify(original_note))
+    
+    note_played=note //note played
     note_diff_base=note_played%12 // note number in c scale
     //note_wanted=note_played+value
     note_from_scale=note_from_keydiff(note_diff_base)
@@ -505,21 +642,36 @@ function play_chord_shifted_from_c(event){
     tone=$("#tone").val();
     key_diff_in_tone=key_diff_from_note(tone,note_from_scale)
     chrd=progressions[tone]
-    //console.log("chord_w"+chrd)
+    console.log(note_from_scale+"-"+key_diff_in_tone)
 
-    chord={chord: chrd[note_from_scale], base: note_played-note_diff_base + value, diff: key_diff_in_tone}
-    play_chord2([chord])
-
-    // $.each(actual_chords,function(i,e){
-    //     console.log("chrd:"+chrd[i]+" i="+i + " e= "+ e.diff +" note_diff_base= "+ note_diff_base)
-    //     if (e.diff==note_diff_base){
-    //         //base= tonart, diff=diff zum ersten ton
+    switch($("#inputmode").val()) {
+        case "named_chord":
+            chord={chord: $("#singlechord").val(), base: note_played-note_diff_base + value, diff: key_diff_in_tone}
+          break;
+        case "single_scale":
+            if (note_from_scale===-1){
+                return;
+            }
+            chord={chord: ["none"], base: note_played - note_diff_base + value, diff: key_diff_in_tone}
+          break;
+        case "scale_chord":
+            if (note_from_scale===-1){
+                return;
+            }
+            chord={chord: chrd[note_from_scale], base: note_played-note_diff_base + value, diff: key_diff_in_tone}
+            break;
+        case "named_chord_scale":
+            if (note_from_scale===-1){
+                return;
+            }
+            chord={chord: $("#singlechord").val(), base: note_played-note_diff_base + value, diff: key_diff_in_tone}
+            break;
+        default:
+            chord={chord: ["none"], base: note_played, diff: 0}
             
-    //     }
-    // })
-   
-
-  
+      }
+      //console.log(original_note.options)
+      play_chord2([chord],on_json)
 }
 
 function listen(input,options){
@@ -531,28 +683,29 @@ function listen(input,options){
 var midiOut=null;
 var midiIn=null;
 function midiOut_Changed(e){
-    console.log(e.target);
+    //console.log(e.target);
     $(e.target).find("option:selected").each(function() {
-        console.log($(this).text())
+        //console.log($(this).text())
         midiOut=WebMidi.getOutputByName($(this).text());
     })
     
 }
 function midiIn_Changed(e){
-    console.log(e.target);
+    //console.log(e.target);
     $(e.target).find("option:selected").each(function() {
-        console.log($(this).text())
+        //console.log($(this).text())
         midiIn=WebMidi.getInputByName($(this).text());
     })
     if (midiIn!=null){
-        console.log("in found")
-        Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function (piano) {
+        //console.log("in found")
+/*        Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function (piano) {
                 console.log("piano on")
-                piano.listenToMidi(new Input(midiIn))
-        });
+                //piano.listenToMidi(new Input(midiIn))
+        });*/
         midiIn.addListener("noteon", e => {
            //document.body.innerHTML+= `${e.note.name} <br>`;
-           play_chord_shifted_from_c(e);
+           //play_chord_shifted_from_c(e);
+           process_input(e)
          });
     }   
 }
@@ -573,11 +726,15 @@ function fill_input_output(){
         text : "-"
         }));
     WebMidi.inputs.forEach((device, index) => {
+        //console.log(device.id + ".."+device.name)
+        if (!/Midi Through.*/.test(device.name) ){
+         
+        
            $('#input_device').append($('<option>', { 
                value: device.name,
                text : device.name 
            }));
-   
+        }
         /*device.addListener("noteon", e => {
            //document.body.innerHTML+= `${e.note.name} <br>`;
            kkk(e);
@@ -586,12 +743,15 @@ function fill_input_output(){
       });
       $("#input_device").on("change",midiIn_Changed);
        WebMidi.outputs.forEach((device, index) => {
-        //document.body.innerHTML+= `${index}: ${device.name} ++${device.id} - ${device.manufacturer} <br>`;
-        $('#output_device').append($('<option>', { 
-            value: device.name,
-            text : device.name 
-        }));
-       
+        
+        //console.log(device.id + ".."+device.name)
+        
+        if (!/Midi Through.*/.test(device.name) ){
+            $('#output_device').append($('<option>', { 
+                value: device.name,
+                text : device.name 
+            }));
+        }
         /*Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function (piano) {
     
             piano.listenToMidi(new Input(device))

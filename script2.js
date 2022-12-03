@@ -291,7 +291,7 @@ key_diff={
     'Loc': [0, 1, 3, 5, 6, 8, 10, 12],
     */
 }
-
+//https://www.fretjam.com/modal-chord-progressions.html
 progressions={
     "maj":["maj","min","min","maj","maj","min","dim"],
     "min":["min","dim","maj","min","min","maj","maj"],
@@ -602,6 +602,13 @@ function play_chord2(chord,options){
                     case 4:
                         t=ind*0.8+ ( (i==0)?0.2 : i==1? 0.4 : i==2 ? 0.6 : 0.8)
                         break;
+                    case 5:
+                        if (ind%2==1){
+                            t=ind*0.8+ ( (i==2)?0.2 : i==1? 0.4 : i==0 ? 0.6 : 0.8)
+                        }else {
+                            t=ind*0.8+ ( (i==1)?0.2 : i==1? 0.4 : i==2 ? 0.6 : 0.8)
+                        }
+                        break;
                 }
                 a.schedule(ctx.currentTime, [
                     {note:n.number,time:t ,gain: gain},
@@ -684,6 +691,9 @@ var midiOut=null;
 var midiIn=null;
 function midiOut_Changed(e){
     //console.log(e.target);
+
+    midiOut=WebMidi.getOutputByName($(e.target).val())
+    return
     $(e.target).find("option:selected").each(function() {
         //console.log($(this).text())
         midiOut=WebMidi.getOutputByName($(this).text());
@@ -691,7 +701,17 @@ function midiOut_Changed(e){
     
 }
 function midiIn_Changed(e){
-    //console.log(e.target);
+
+    $.each(WebMidi.inputs,function (ind,m){
+        m.removeListener();
+    })
+
+    midiIn=WebMidi.getInputByName($(e.target).val())
+    midiIn.addListener("noteon", e => {
+        process_input(e)
+    });
+
+    return
     $(e.target).find("option:selected").each(function() {
         //console.log($(this).text())
         midiIn=WebMidi.getInputByName($(this).text());
@@ -707,7 +727,7 @@ function midiIn_Changed(e){
            //play_chord_shifted_from_c(e);
            process_input(e)
          });
-    }   
+    }
 }
 
 
